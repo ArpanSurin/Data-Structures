@@ -9,7 +9,7 @@ LeetCode is an excellent platform for enhancing coding skills and preparing for 
 - Solutions implemented in multiple programming languages (e.g., Python, C++, C language).
 - Explanations and comments to help understand the logic and approach.
 
-  ## Contributions
+## Contributions
 
 Contributions are welcome! If you'd like to add new solutions, fix bugs, or improve documentation, follow these steps:
 
