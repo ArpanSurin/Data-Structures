@@ -1,4 +1,5 @@
-# DSA
+# Data Structures & Algorithm
+
 Welcome to the **DSA Questions and Solutions** repository! This repository is a collection of solutions to various problems on LeetCode. It serves as a reference for learning, improving problem-solving skills, and preparing for coding interviews.
 
 ## Overview
