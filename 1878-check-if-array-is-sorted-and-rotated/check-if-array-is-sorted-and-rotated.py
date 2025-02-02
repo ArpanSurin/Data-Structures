@@ -1,10 +1,12 @@
-class Solution:
-    def check(self, nums: List[int]) -> bool:
-        if (nums == sorted(nums)):
-            return True
-        else:
-            for k in range(len(nums)):
-                rotated_nums = nums[k:] + nums[:k]
-                if rotated_nums == sorted(nums):
-                    return True
-        return False
+class Solution(object):
+    def check(self, nums):
+        count = 0
+        n = len(nums)
+
+        for i in range(n):
+            if nums[i] > nums[(i + 1) % n]:  # Using modulo to handle circular array
+                count += 1
+            if count > 1:
+                return False  # More than 1 break in order means it can't be rotated to sorted
+
+        return True
