@@ -1,12 +1,11 @@
 class Solution:
     def maxAscendingSum(self, nums: List[int]) -> int:
-        max_ar = total = nums[0]  # ✅ Initialize both max_ar and total with first element
-
+        max_ar = total = nums[0]
         for i in range(1, len(nums)):
-            if nums[i] > nums[i-1]:  
-                total += nums[i]  # ✅ Continue summing if increasing
+            if(nums[i] > nums[i-1]):
+                total += nums[i]
             else:
-                max_ar = max(max_ar, total)  # ✅ Update max_ar if sequence breaks
-                total = nums[i]  # ✅ Reset total to new start element
-        
-        return max(max_ar, total)
+                max_ar = max(max_ar, total)
+                total = nums[i]
+        max_ar = max(max_ar, total)
+        return max_ar
