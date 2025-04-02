@@ -8,6 +8,7 @@ public:
             }     
             j++;
         }
-        return i == s.size();
+        if (i == s.size()) return true;
+        else return false;
     }
 };
